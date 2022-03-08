@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #C1FFD7;
+    flex-direction: column;
+}
+
+body.dark{
+    background-color: #5463FF ;
+}
+.container{
+    display: flex;
+    flex-direction:column;
+    width: 310px;
+    min-height: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.header{
+    font-family:'Permanent Marker', cursive;
+    font-size: 47px; 
+    font-weight: 900;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    filter: drop-shadow(0 0.25em 0.25rem rgba(0, 0, 0, 0.2));
+    color: black;
+}
+
+.icon{
+    cursor: pointer;
+}
+
+.input-todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    position: relative;
+    align-items: center;
+    background-color: #F5C0C0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+}
+
+.input-todo.dark{
+    background-color: #03045E;
+}
+.input-todo input{
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 260px;
+    height: 35px;
+    font-size: 16px;
+    padding: 2px;
+}
+
+.input-todo.dark.input{
+    color: whitesmoke;
+
+}
+::placeholder{
+    color: #696969;
+}
+button{
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    font-weight: bold; 
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background:coral; 
+}
+.all-todo{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.all-todo p{
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    background-color: #E8FFC2;
+    /* 16213E */
+    width: 290px;
+    min-height: 41px;
+    padding: 15px;
+    overflow:hidden;
+    position: relative;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 1.6px 3.2px 3.2px hsl(0deg 0% 0% / 0.45);
+    overflow-wrap: break-word;
+    word-break:keep-all;
+}
+
+.dark p{
+   color:#E8FFC2;
+   background-color: #16213E;
+}
+
+.all-todo p:hover{
+    background-color: #F4FCD9;
+}
+
+.dark p:hover{
+    color: #03045E;
+}
+
+.contact{
+    display: flex;
+    justify-content:space-between;
+}
+.contact a{
+    margin: 10px;
+    flex-direction: column;
+    cursor: pointer;
+}
+.contact a img{
+    filter: drop-shadow(0 0.6em 0.25rem rgba(0, 0, 0, 0.2));
+}
+footer{
+    font-family: 'Courier New', Courier, monospace;
+}
