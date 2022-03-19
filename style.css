@@ -119,10 +119,13 @@ button{
 
 .all-todo p:hover{
     background-color: #F4FCD9;
+    cursor: pointer;
+
 }
 
 .dark p:hover{
     color: #03045E;
+    cursor: pointer;
 }
 
 .contact{
@@ -139,4 +142,8 @@ button{
 }
 footer{
     font-family: 'Courier New', Courier, monospace;
+}
+.all-todo p.completed{
+    text-decoration: line-through;
+    background-color: #FFAFAF;
 }
